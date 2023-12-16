@@ -1,0 +1,34 @@
+header.header
+    .container 
+        +imageSVG('logo')
+        //- img(src="../src/images/logo.svg" alt="")
+        nav 
+            ul.nav__list 
+                a.nav__link(href="#")
+                    li.nav__item About us
+                a.nav__link(href="#")
+                    li.nav__item Roadmap
+                a.nav__link(href="#")
+                    li.nav__item Documents
+                a.nav__link(href="#")
+                    li.nav__item F.A.Q.
+                a.nav__link(href="#")
+                    li.nav__item.active.active Buy NFT glasses
+        .menu 
+            .menu__item 
+                +imagePng('cheel')
+                .menu__item-text
+                    h5.menu__item-tile CHEEL
+                    p.menu__item-price $8,00
+            .menu__item 
+                +imagePng('lee')
+                .menu__item-text
+                    h5.menu__item-tile LEE
+                    p.menu__item-price $8,00
+            .menu__item 
+                +imageSVG('logo-certik').menu__logo
+            .menu__item.menu__currency
+                select
+                    option(value="EU")  EU
+                    option(value="$")  $
+                    option(value="RU")  RU

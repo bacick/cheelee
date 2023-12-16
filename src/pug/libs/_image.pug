@@ -1,6 +1,9 @@
-mixin image(name)
+mixin imagePng(name)
     img.src(src=require(`../src/images/${name}.png`) alt=name)
 
-mixin imagejpg(name)
+mixin imageJpg(name)
     img.src(src=require(`../src/images/${name}.jpg`) alt=name)
+
+mixin imageSVG(name)
+    img.src(src=require(`../src/images/${name}.svg`) alt=name)
 
