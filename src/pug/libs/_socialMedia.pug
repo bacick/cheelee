@@ -1,0 +1,5 @@
+mixin socialMedia(array, cls)
+    each item in array
+        li(class=`${cls}-item`)
+            a(href=`http://${item}.com`, target="_blank", class=`${cls}-link`) 
+                +imageSVG(item) 

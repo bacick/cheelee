@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
 
 
 .none{
     display: none !important;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: $dark;
+    font-family: generalFont, sans-serif;
+    background-color: $main-bg;
     color:$white;
-    font-size: 16px;
+    font-size: 1.8rem;
+    line-height: 33px;
 }
 
 a {
@@ -17,14 +21,8 @@ a {
     transition: color 0.3 ease-in;
 
     &:hover{
-        color:$accent;
+        
     }
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1140px;
 }
 
 .visually-hidden {
@@ -46,17 +44,16 @@ a {
 }
 
 .title-2 {
-    color: $accent;
-    font-family: $font-accent;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-
-    @include mediaTable{
-        font-size: 28px;
-    }
+  
 }
 
+.active{
+    color: $selectionText
+}
+
+.text-select{
+    color: $selectionText;
+}
 
 .no-scroll{
     overflow-y: hidden;

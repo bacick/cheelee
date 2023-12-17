@@ -1,0 +1,57 @@
+.presale{
+    height: 18.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(180deg,
+     rgba(113, 86, 251, 0.20) 0%,
+     rgba(255, 13, 255, 0.20) 100%);
+
+     border: 1px solid #7156FB;
+     border-radius: 4rem;
+
+     position: relative;
+
+     &::before{
+        content: '';
+        width: 3.6rem;
+        height: 1.8rem;
+        position: absolute;
+        top: -0.9rem;
+        left: 31%;
+
+        background: center url(../images/tripl-arrow.svg) no-repeat;
+        background-size: contain;
+    }
+
+    &::after{
+        content: '';
+        width: 3.6rem;
+        height: 1.8rem;
+        position: absolute;
+        bottom: -0.9rem;
+        right: 31%;
+
+        background: center url(../images/tripl-arrow.svg) no-repeat;
+        background-size: contain;
+
+        transform: rotate(180deg);
+    }
+}
+
+.presale .container--sml{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.presale p{
+    font-family: secondaryFont;
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+
+}
