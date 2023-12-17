@@ -12,7 +12,8 @@ body {
     font-family: generalFont, sans-serif;
     background-color: $main-bg;
     color:$white;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 33px;
 }
 
 a {
@@ -50,6 +51,9 @@ a {
     color: $selectionText
 }
 
+.text-select{
+    color: $selectionText;
+}
 
 .no-scroll{
     overflow-y: hidden;

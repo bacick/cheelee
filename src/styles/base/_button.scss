@@ -1,0 +1,16 @@
+.btn{
+    font-size: 20px;
+    font-family: secondaryFont;
+
+    border-radius: 4rem;
+    background: #7156FB;
+    padding: 2.8rem 4rem;
+    opacity: 0.8;
+
+    transition: transform .2s ease-out, opracity .2s ease;
+
+    &:hover{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}

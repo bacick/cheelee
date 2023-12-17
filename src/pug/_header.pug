@@ -1,7 +1,8 @@
 header.header
-    .container 
-        +imageSVG('logo')
-        //- img(src="../src/images/logo.svg" alt="")
+    .container
+        a(href="#")  
+            +imageSVG('logo')
+        
         nav 
             ul.nav__list 
                 a.nav__link(href="#")
@@ -25,8 +26,9 @@ header.header
                 .menu__item-text
                     h5.menu__item-tile LEE
                     p.menu__item-price $8,00
-            .menu__item 
-                +imageSVG('logo-certik').menu__logo
+            .menu__item
+                a(href="#")  
+                    +imageSVG('logo-certik').menu__logo
             .menu__item.menu__currency
                 select
                     option(value="EU")  EU

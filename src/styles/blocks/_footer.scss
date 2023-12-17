@@ -1,0 +1,24 @@
+
+.footer{
+    height: 78.4rem;
+
+    background: right url(../images/footer-bg.png) no-repeat;
+    background-size: 75%;
+}
+
+.footer__content{
+    max-width: 36.5rem;
+    padding-top: 23.1rem;
+}
+
+.footer__title{
+    font-family: secondaryFont;
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+    padding-right: 2.1rem;
+}
+
+.footer__content > p{
+    color: #FCFCFD;
+}
