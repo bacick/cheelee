@@ -2,7 +2,26 @@
     display: flex;
 }
 
-.nav__link{
+.nav__item{
+  
+
+    
+}
+
+.nav__link {
+    display: block;
+    padding: 0 1.8rem;
+    border-radius: 20px;
     color: $secondatyText;
-    margin-right: 3.6rem;
+
+    transition: color .2s linear,
+    background-color .6s ease-out;
+    &:hover{
+        color: $white;
+        background-color: $secondary-bg;
+    }
+}
+
+.active{
+    color: $selectionText
 }

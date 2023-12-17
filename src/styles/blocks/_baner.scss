@@ -31,8 +31,16 @@
     width: 6.4rem;
     height: 6.4rem;
     padding: .6rem 1.2rem;
+    border: 1px solid #000;
     border-radius: 20px;
     background: $secondary-bg;
+
+    transition: transform .3s linear,
+    background-color .3s linear;
+    &:hover{
+        transform: scale(1.04);
+        background-color: lighten($secondary-bg, 10%);
+    }
 }
 
 .baner__text-link{
@@ -40,6 +48,7 @@
     line-height: 28px;
     margin-top: 1rem;
     margin-bottom: 12rem;
+   
 }
 
 .baner__social ul{
@@ -48,4 +57,14 @@
 
 .baner__social-item{
     margin-bottom: 2rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: $secondary-bg;
+
+    transition: transform .3s linear,
+    background-color .3s linear;
+    &:hover{
+        transform: scale(1.04);
+        background-color: lighten($secondary-bg, 10%);
+    }
 }

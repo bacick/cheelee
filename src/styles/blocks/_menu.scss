@@ -17,6 +17,7 @@
 .menu__item-text{
     margin-left: .6rem;
     margin-right: 1rem;
+    line-height: 1.8rem;
 }
 
 .menu__item-tile{
@@ -56,6 +57,7 @@
         right: -.4rem;
         top: calc(50% - .4rem);
     }
+    
 }
 
 
@@ -75,4 +77,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    &:hover{
+        color: lighten($secondatyText, 20%)
+    }
 }
