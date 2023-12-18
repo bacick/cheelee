@@ -2,7 +2,13 @@
 .footer{
     height: 78.4rem;
 
-    background: right url(../images/footer-bg.png) no-repeat;
+    background-image: url("../images/footer-bg@1x.png") ;
+    background-image: image-set(
+      url("../images/footer-bg@3x.png") 3x,
+      url("../images/footer-bg@2x.png") 2x,
+      url("../images/footer-bg@1x.png") 1x);
+    background-repeat: no-repeat;
+    background-position: right;
     background-size: 75%;
 }
 

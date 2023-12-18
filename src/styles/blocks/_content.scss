@@ -80,7 +80,13 @@
     }
     &--6{
         grid-area: item-6;
-        background: center url(../images/content-bg.png) no-repeat;
+        background-image: url("../images/content-bg@1x.png") ;
+        background-image: image-set(
+          url("../images/content-bg@3x.png") 3x,
+          url("../images/content-bg@2x.png") 2x,
+          url("../images/content-bg@1x.png") 1x);
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: 90%;
     }
     
@@ -95,6 +101,7 @@
         bottom: 50%;
         width: 10.2rem;
         height: 9.7rem;
+        
         background: center url(../images/tnt-content.svg) no-repeat;
         background-size: cover;
     }
