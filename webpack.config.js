@@ -21,6 +21,7 @@ module.exports = {
       filename: "[name].[contenthash].css",
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.ico",
       template: "./src/index.pug",
     }),
   ],
@@ -59,6 +60,10 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(ico)$/i,
         type: "asset/resource",
       },
       {
